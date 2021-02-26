@@ -1,0 +1,42 @@
+<html>
+    <body>
+        
+        <div class="wrapper">
+            <div class="item">Item1</div>
+            <div class="item">Item2</div>
+            <div class="item">Item3</div>
+            <div class="item">Item4</div>
+            <div class="item">Item5</div>
+        </div>
+
+    </body>
+</html>
+
+
+<style>
+    .wrapper{
+        max-height: 500px;
+		border: 1px solid #ddd;
+		display: flex;
+		overflow-x: auto;
+
+        border: none;
+    }
+
+    .wrapper::-webkit-scrollbar{
+        width: 0px;
+    }
+
+    .wrapper .item{
+        min-width: 350px;
+		height: 200px;
+		line-height: 200px;
+		text-align: center;
+        background-color: rgb(209, 22, 84);
+        margin-right: 80px;
+
+        border-radius: 10px;
+
+        font-size: 30px;
+    }
+</style>
